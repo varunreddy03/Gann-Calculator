@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Gann Calculator</title>
+  <style>
+    .card {
+      box-shadow: 0px 4px 8px 0px #757575;
+      border-radius: 0px;
+      width: 20vw;
+    }
+
+    .heading {
+      padding-top: 5vh;
+      padding-bottom: 3vh;
+
+    }
+  </style>
+  <script src="crypto.js">
+    
+  </script>
+</head>
+
+<body class="container">
+  <h1 class="heading text-center">GANN Calculator</h1>
+  
+    <div class="row  form-group">
+      <div class="col-sm-4 ">
+        <input class="form-control" type="text" id="value" placeholder="Enter the Market Low Price">
+      </div>
+    </div><br>
+    <div class="row form-group">
+      <div class="col-sm-4 ">
+        <input class="form-control" type="text" id="num"  placeholder="Enter No of Expected Prices">
+      </div>
+    </div><br>
+    <div class="row form-group">
+      <div class="col-sm-3">
+        <button type="submit" class="btn btn-primary" onclick="GCal()">Calculate</button>
+      </div>
+    </div>
+    <div class="row form-group">
+      <div class="col-sm-3">
+        <a href="Crypto.html" >Reset Values</a>
+      </div>
+    </div>
+  
+
+  <div class="table table-striped" id="cal_table">
+
+  </div>
+
+
+</body>
+
+</html>
